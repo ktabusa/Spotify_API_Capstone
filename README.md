@@ -1,72 +1,70 @@
-# Spotify API Capstone Project for PDX Code Guild class_otter
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Project Overview
-This project is intended to help a spotify user visualize some of the information regarding their music listening habits in a clean visual format.  The product will end along the lines of the 'Year in Review' feature that they provide to users, but available real-time instead of once annually. The spotify app home interface for both desktop and mobile is also extremely busy, so the intent is also to reduce the visual clutter to show just what the user is interested in, and not endless rows of random recommendations. The user will be required to login in with an existing spotify account so they can view their data using the Spotify API.
+## Available Scripts
 
-Libraries/Frameworks: Python, Vue, Django Rest Framework (Serializers). Maybe a visualization library for nice to have features.
+In the project directory, you can run:
 
+### `npm start`
 
-## Features
-Listed below as tasks to address user stories.  
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### User Stories
-**As a spotify user I want to see what my listening habits were like for the past few weeks/few months/few years with regards to top songs or artists.**  
-**Tasks:**  
--Create a Home page with login link  
--Create a login page / use the Spotify API to allow user to login to the app with their own  account information  
--Display the output from the spotify 'Get User's Top Items' (two options for the query and display: Song or Artist)  
--TBD: There may be an opportunity to show interesting info about artists based on the API response info for artists  
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-**The user wants to look at the genre information for their listening history**  
-**Tasks:**  
--The genre data is embedded per artist, so I'll need to loop through the data and count the number of occurrences of each genre. Whether it is the 'TopSongs' or 'TopArtists' output is dependent on the response metadata format.  
--Graph or display music genre info displayed on a new page from the welcome page.  
+### `npm test`
 
-**The user wants to see related artists to their favorite.**  
-**Tasks:**  
--Include functionality to link artist images to the Spotify API's related artists call.  
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-**The user wants to be able to preview songs that they've listened to.**  
-**Tasks:**  
--In the song icon / model include the functionality to play a song with a click / hover over the image or text.  
+### `npm run build`
 
-**The user wants to be able to see themetic elements between the songs that they've listened to.**  
-**Tasks:**  
--Utilize spotify API to check 'happiness', energy, and danciness  
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-**The user wants to see the relative popularity of the songs / artists they listen to**  
--Utilize spotify API to display popularity.  This could be incorporated into a little mini game to compare which artist is more popular.  
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Data Model
-'User'  
-'TopSongs'  
-'TopArtists'  
-'Genres'  
-'Song'  
+### `npm run eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## Schedule
-**Week 1**  
--Complete project start and Spotify Account Sign in Functionality (MVP) 
--Complete login page and top 50 landing page (MVP)  
--Create a custom user model just in case I want to include additional functionality (MVP)  
--Create API links to pull and display a users top 50 songs (MVP)  
--Start general UI feel with color theming / song model (MVP)  
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-**Week 2**  
--Complete the loop functionality to tally most popular genre data (MVP)  
--Create a page to view the users top artists.  Likely need to piggy back on the loopfunctionality from the genres (MVP)  
--Dial in clean UI feel for the pages above  
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-**Week 3**  
--Get the site up and running on heroku or similar?  
--Include functionality to link artist images to the Spotify API's related artists call (nice to have)  
--Utilize spotify API to check 'happiness', energy, and danciness (nice to have)  
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-**Week 4**  
--In the song icon / model include the functionality to play a song with a click / hover over the image or text (nice to have)  
--Utilize spotify API to display popularity (nice to have)
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
